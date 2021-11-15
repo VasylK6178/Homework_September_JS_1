@@ -42,52 +42,64 @@
 //     console.log(true)
 // }
 
-
-let test2 = '' ?  'false' : 'true'; // якщо  не дорівнює true, виведіть 'Вірно', інакше виведіть 'Неправильно'.
-console.log(test2);
+//
+// let test2 = '' ?  'false' : 'true'; // якщо  не дорівнює true, виведіть 'Вірно', інакше виведіть 'Неправильно'.
+// console.log(test2);
 
 // - Якщо змінна a не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'.
 //     Перевірте  скрипт при a, що дорівнює 1, 0, -3
 
-let a = 0;
-if (a === 0) {
-    console.log(true);
-} else {console.log(false)}
+// let a = 0;
+// if (a === 0) {
+//     console.log(true);
+// } else {console.log(false)}
 
 
 // - Скласти розклад на тиждень за домопоги switch.
 //     Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано
 //     на цей день.
-
-let day = +prompt('enter the day number of the week')
-switch (day) {
-    case 1:
-        document.write('<h>Plan_1</h>');
-        break;
-    case 2: 
-        document.write('<h>Plan_2</h>');
-        break;
-    case 3:
-        document.write('<h>Plan_3</h>');
-        break;
-    case 4:
-        document.write('<h>Plan_4</h>');
-        break;
-    case 5:
-        document.write('<h>Plan_5</h>');
-        break;
-    case 6:
-        document.write('<h>Plan_6</h>');
-        break;
-    case 7:
-        document.write('<h>Plan_7</h>');
-        break;
-    default:
-        document.write('wrong number');
-}
+//
+// let day = +prompt('enter the day number of the week')
+// switch (day) {
+//     case 1:
+//         document.write('<h>Plan_1</h>');
+//         break;
+//     case 2:
+//         document.write('<h>Plan_2</h>');
+//         break;
+//     case 3:
+//         document.write('<h>Plan_3</h>');
+//         break;
+//     case 4:
+//         document.write('<h>Plan_4</h>');
+//         break;
+//     case 5:
+//         document.write('<h>Plan_5</h>');
+//         break;
+//     case 6:
+//         document.write('<h>Plan_6</h>');
+//         break;
+//     case 7:
+//         document.write('<h>Plan_7</h>');
+//         break;
+//     default:
+//         document.write('wrong number');
+// }
 
 // - Потрібно визначити Високосний рік чи ні. Високосні роки діляться націло на 4.
 
-let a = +promt('enter the year');
-let b = a % 4;
-if (year Math.)
+// let a = +prompt('Введіть номер року');
+// let b = a % 4;
+// if (b = 0){
+//     consol.log('Високосний')
+// } else {console.log('Не високосний')}
+
+// - Використовуючи конструкцію if..else, напишіть код, який запитуватиме:
+//     „Яка «офіційна» назва JavaScript?“
+// Якщо користувач вводить «ECMAScript», то показати: «Правильно!»,
+// інакше – відобразити: «Не знаєте? ECMAScript!
+
+let name = prompt('Яка «офіційна» назва JavaScript?');
+if (name === 'ECMAScript') {
+    console.log('Правильно!')
+} else {console.log('Не знаєте? ECMAScript!')}
