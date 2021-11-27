@@ -64,7 +64,7 @@ let sameItemfiltr = arry2.filter((element)=> console.log(element));
 
 
 let sameItem = (id,name,age)=> {
-    document.write(`<h2>${id} ${name} ${age}</h2>`)
+    document.write(`<div>${id} ${name} ${age}</div>`)
      };
 sameItem(3,'Kolya',25)
 
