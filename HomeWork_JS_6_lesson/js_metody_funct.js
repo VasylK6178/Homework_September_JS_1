@@ -90,3 +90,10 @@ function argUpp(strList) {
 }
 argUpp(strList);
 
+// - Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
+
+let capitalize = (str) => {
+    return str.split(' ').map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(' ');
+};
+document.write(capitalize('okten hi you are welcome'));
+console.log(capitalize('okten hi you are welcome'));
