@@ -1,41 +1,41 @@
 // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
 //
-//  function User (id,name,surname,email,phone) {
-//              this.id = id;
-//              this.name = name;
-//              this.surname = surname;
-//              this.email = email;
-//              this.phone = phone;
-// }
-//
-//
+ function User (id,name,surname,email,phone) {
+             this.id = id;
+             this.name = name;
+             this.surname = surname;
+             this.email = email;
+             this.phone = phone;
+}
+
+
 // // створити пустий масив, наповнити його 10 об'єктами new User(....)
-//
-// let users =  [
-//     new User(3,'Roman','Koval','djeuj@gmail.com', '+30968573749'),
-//     new User(4,'Kjlya','Burak','svbt@gmail.com', '+30975075834'),
-//     new User(2,'Olya','Pankiv','sevrrv@gmail.com', '+3099057363'),
-//     new User(1,'Vova','Luciv','pehefg@gmail.com', '+306204894757'),
-//     new User(10,'Cergay','Shpak','tyiorg@gmail.com', '+30988767455'),
-//     new User(8,'Ruslan','Lupak','uluigr@gmail.com', '+309947464664'),
-//     new User(9,'Oksana','Fedoriv','bjik,@gmail.com', '+3068347373773'),
-//     new User(7,'Anja','Daniv','zvexv@gmail.com', '+30638484756763'),
-//     new User(5,'Dima','Mota','pdvbt@gmail.com', '+30993784747756'),
-//     new User(6,'Lesya','Kolesnikov','wbnki@gmail.com', '+3095985877366')
-// ];
-// console.log(users);
-//
-//
+
+let users =  [
+    new User(3,'Roman','Koval','djeuj@gmail.com', '+30968573749'),
+    new User(4,'Kjlya','Burak','svbt@gmail.com', '+30975075834'),
+    new User(2,'Olya','Pankiv','sevrrv@gmail.com', '+3099057363'),
+    new User(1,'Vova','Luciv','pehefg@gmail.com', '+306204894757'),
+    new User(10,'Cergay','Shpak','tyiorg@gmail.com', '+30988767455'),
+    new User(8,'Ruslan','Lupak','uluigr@gmail.com', '+309947464664'),
+    new User(9,'Oksana','Fedoriv','bjik,@gmail.com', '+3068347373773'),
+    new User(7,'Anja','Daniv','zvexv@gmail.com', '+30638484756763'),
+    new User(5,'Dima','Mota','pdvbt@gmail.com', '+30993784747756'),
+    new User(6,'Lesya','Kolesnikov','wbnki@gmail.com', '+3095985877366')
+];
+console.log(users);
+
+
 // // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
-// //
-// let usersfiltr = users.filter(value => value.id % 2 ===0 );
-// console.log(usersfiltr);
 //
-// //- Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
-//
-//
-// let userssortid = users.sort((a1,a2)=>{return a1.id-a2.id});
-// console.log(userssortid);
+let usersfiltr = users.filter(value => value.id % 2 ===0 );
+console.log(usersfiltr);
+
+//- Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+
+
+let userssortid = users.sort((a1,a2)=>{return a1.id-a2.id});
+console.log(userssortid);
 
 // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order
 // (поле є масивом зі списком товарів)
