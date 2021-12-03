@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cupiditate deleniti
+    molestias mollitia pariatur porro saepe! Dolorem eaque earum eligendi, iste maxime molestias quam vitae.
+    Dolore hic in quae sed.
+</p>
+
+<div id="rules" class="fc bp">
+    Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе. Второе правило Бойцовского
+    клуба: никогда никому не рассказывать о Бойцовском клубе. Третье правило Бойцовского клуба: в схватке
+    участвуют только двое. Четвертое правило Бойцовского клуба: не более одного поединка за один раз
+</div>
+
+<ul>
+    <li class="fc_rules rule1">Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе.</li>
+    <li class="fc_rules rule2">Второе правило Бойцовского
+        клуба: никогда никому не рассказывать о Бойцовском клубе
+    </li>
+    <li class="fc_rules rule3">Третье правило Бойцовского клуба: в схватке
+        участвуют только двое.
+    </li>
+    <li class="fc_rules rule4">Четвертое правило Бойцовского клуба: не более одного поединка за один раз</li>
+</ul>
+
+<script>
+
+//  Візьміть файл template1.html, підключіть до нього скрипт, і працюйте в ньому!
+
+//      - Напишіть код,  котрий :
+//  -- отримує текст з параграфа з id "content"
+let getcontent = document.getElementById('content');
+console.log(getcontent.innerText);
+
+// -- отримує текст з блоку з id "rules"
+let getrules = document.getElementById('rules');
+console.log(getrules.innerText);
+
+// -- замініть текст параграфа з id 'content' на будь-який інший
+let getcontent2 = getcontent.innerText = 'Объект Math является встроенным объектом в язык JavaScript. Он хранит в своих свойствах и методах различные математические константы и функции. При этом объект Math не является функциональным объектом.';
+console.log(getcontent2);
+
+//-- замініть текст параграфа з id 'rules' на будь-який інший
+
+let getrules2 = getrules.innerText ='Поскольку метод pow() является статическим методом объекта Math, вы всегда должны использовать его как Math.pow(), а не пытаться вызывать метод на созданном экземпляре объекта Math (поскольку объект Math не является конструктором).';
+console.log(getrules2);
+
+//-- змініть кожному елементу колір фону на червоний
+
+let items = document.body.children;
+for (let item of items) {
+    item.style.background = 'red';
+}
+// -- змініть кожному елементу колір тексту на синій
+let elements = document.body.children;
+for (let element of elements){
+    element.style.color='blue';
+}
+// -- отримати весь список класів елемента з id=rules і вивести їх в console.log
+let classList = document.getElementById('rules').classList;
+console.log(classList);
+
+// -- поміняти колір тексту у всіх елементів fc_rules на червоний
+let elementsRules = document.getElementsByClassName('fc_rules');
+for(let element of elementsRules){
+    element.style.color = 'red';
+}
+
+
+
+</script>
+</body>
+</html>
