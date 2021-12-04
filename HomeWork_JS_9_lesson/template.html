@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+ //Все робити за допомоги js.
+
+  // - створити блок,
+ let div = document.createElement('div');
+
+ // - додати цей блок в body.
+
+ let appendChildDiv = document.body.appendChild(div);
+
+ //     - додати йому класи wrap, collapse, alpha, beta
+ div.classList.add('wrap','collapse','alpha','beta');
+
+
+  // - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту
+
+ div.style.background = 'coral';
+ div.style.color ='blue';
+ div.style.fontSize = '10';
+
+
+ // - клонувати його повністю, та додати клон в body.
+
+ let div2 = div.cloneNode(true);
+ document.body.appendChild(div2);
+
+
+</script>
+</body>
+</html>
