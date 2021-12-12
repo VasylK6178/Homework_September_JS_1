@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- -створити форму з інпутами для model,type та volume автівки.-->
+<!--при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.-->
+
+
+<form action="" name="car">
+    <input type="text" name="carmodel">
+    <input type="text " name="cartype">
+    <input type="text " name="carvolume">
+    <button>SAVE</button>
+</form>
+
+<script>
+    let car1 = document.forms.car;
+    car1.onsubmit = function (e) {
+        e.preventDefault();
+        let model = this.carmodel.value;
+        let type = this.cartype.value;
+        let volume = this.carvolume.value;
+        localStorage.setItem('Car', JSON.stringify({model:model,type:type,volume:volume}));
+    }
+
+
+
+
+</script>
+</body>
+</html>
