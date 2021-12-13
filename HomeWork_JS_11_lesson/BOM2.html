@@ -19,13 +19,16 @@
 
 <script>
     let car1 = document.forms.car;
-    car1.onsubmit = function (e) {
-        e.preventDefault();
+    car1.onsubmit = function () {
         let model = this.carmodel.value;
         let type = this.cartype.value;
         let volume = this.carvolume.value;
-        localStorage.setItem('Car', JSON.stringify({model:model,type:type,volume:volume}));
-    }
+        let car = {model:model,type:type,volume:volume};
+        let cars = JSON.parse(localStorage.getItem('cars')) || [];
+        cars.push(car);
+        localStorage.setItem ('cars', JSON.stringify(cars));
+
+    };
 
 
 
